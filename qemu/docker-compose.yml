@@ -1,0 +1,7 @@
+qemu:
+  build: .
+  environment:
+    MKFS_TYPE: ext4
+    IMAGE_SIZE: 10G
+  volumes:
+    - .:/home/qemu
