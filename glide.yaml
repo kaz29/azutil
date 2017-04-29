@@ -1,0 +1,9 @@
+package: github.com/kaz29/azutil
+import:
+- package: github.com/Azure/azure-sdk-for-go
+  version: ~9.0.1-beta
+- package: github.com/spf13/viper
+- package: github.com/jessevdk/go-flags
+  version: ~1.2.0
+- package: github.com/Azure/go-autorest
+  version: ~7.3.1
