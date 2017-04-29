@@ -12,9 +12,9 @@ func main() {
 	parser := flags.NewParser(&commands.Azutil, flags.Default)
 	parser.Name = "azutil"
 
-	args, _ := parser.Parse()
+	parser.Parse()
 
-	if len(args) == 0 {
+	if len(os.Args) == 1 {
 		parser.WriteHelp(os.Stdout)
 		os.Exit(1)
 	}
